@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <script src="custom.js"></script>
+</head>
+<body>
+
+First Number:  <input type="text"  id="firstNum"/><br/>
+Second Number: <input type="text"  id="secondNum"/><br/>
+
+
+
+<select id="opt" style="float:left">
+    <option value="Add">Add     </option>
+    <option value="Sub">Subtract</option>
+    <option value="Mul">Multiply</option>
+    <option value="Div">Division</option>
+</select>
+
+   <div>
+      <button id="result" onclick="callMe()" >Get Resut </button>
+   </div>
+<div id="display" style="float:left" > <span id="res"></span></div>
+
+</body>
+</html>
