@@ -1,0 +1,54 @@
+/**
+ * Created by Tushit on 04-08-2015.
+ */
+function validate(){
+     firstValue = parseInt(document.getElementById("firstNum").value);
+     secondValue = parseInt(document.getElementById("secondNum").value)
+    if(!firstValue){
+        firstValue = 0;
+    }
+    if(!secondValue){
+        secondValue = 0;
+    }
+
+}
+function callMe(){
+    if(document.getElementById("opt").value=="Add")
+    {
+        add();
+
+    }
+    else
+    if(document.getElementById("opt").value=="Sub"){
+      sub();
+    }
+    else
+    if(document.getElementById("opt").value=="Mul"){
+        mul();
+    }
+    else
+    if(document.getElementById("opt").value=="Div"){
+        div();
+    }
+}
+
+function add(){
+    validate();
+    document.getElementById("res").innerHTML= firstValue + secondValue;
+}
+
+function sub()
+{
+    validate();
+    document.getElementById("res").innerHTML= firstValue - secondValue;
+}
+function mul()
+{
+    validate();
+    document.getElementById("res").innerHTML= firstValue * secondValue;
+}
+function div()
+{
+    validate();
+    document.getElementById("res").innerHTML= firstValue/secondValue;
+}
